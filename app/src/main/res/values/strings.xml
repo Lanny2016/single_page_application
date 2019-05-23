@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">single_page_application</string>
+    <!-- String for the image description-->
+
+    <string name="shop_image">shop_image</string>
+    <!-- String for the header -->
+
+    <string name="header">New Photo Saigon &amp; Noodle Grill Restaurant </string>
+    <!-- String for the location -->
+
+    <string name="address">Baris Mh 1806/3 Sokak No:6</string>
+
+    <!-- String for the contact-->
+    <string name="contact">05393489529</string>
+
+    <!-- String for the contact-->
+    <string name="information">We`re OPEN LATE!\n
+        Sun - Thur 8:30 - 12:30\n
+        Fri&amp;Sat 8:30 - 3pm \n
+        \"We serve the the freshest Noodle Soup daily\" \n
+        This allows us to include quote characters within a string
+        This allows us to include quote characters within a string
+        This allows us to include quote characters within a string.</string>
+
 </resources>
