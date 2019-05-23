@@ -6,9 +6,22 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-        <!-- Custom styles for images -->
-
     </style>
+
+        <!-- Custom styles for imageViews -->
+      <style  name="imageIconStyle">
+        <item name="android:layout_width">19dp</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+      </style>
+    <!-- Custom styles for textViews -->
+    <style name="customTextStyle">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
 
 </resources>

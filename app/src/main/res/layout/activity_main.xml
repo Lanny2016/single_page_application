@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,64 +18,54 @@
         android:id="@+id/image"
         android:layout_width="350dp"
         android:layout_height="270dp"
-        android:src="@drawable/barbershop"
-        android:contentDescription="@string/shop_image" />
+        android:contentDescription="@string/shop_image"
+        android:src="@drawable/barbershop" />
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/header"
-        android:autoSizeTextType="uniform"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <ImageView
-            android:id="@+id/locationImage"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/location_icon" />
 
         <TextView
+            android:id="@+id/header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/header"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/locationImage"
+                style="@style/imageIconStyle"
+                android:src="@drawable/location_icon" />
+
+            <TextView
+                style="@style/customTextStyle"
+                android:text="@string/address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/address" />
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
+            <ImageView
+                android:id="@+id/callImage"
+                style="@style/imageIconStyle"
+                android:contentDescription="callIcon"
+                android:src="@drawable/call_icon" />
 
-        <ImageView
-            android:id="@+id/callImage"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-
-            android:src="@drawable/call_icon"
-            android:contentDescription="callIcon" />
+            <TextView
+                style="@style/customTextStyle"
+                android:text="@string/contact" />
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            style="@style/customTextStyle"
+            android:text="@string/information" />
 
-            android:text="@string/contact" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/information" />
-
+   
 </LinearLayout>
+    </ScrollView>
